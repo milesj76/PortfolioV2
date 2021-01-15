@@ -4,8 +4,9 @@
     align-items: center;
     flex-direction: column;
     height: 20rem;
-    background: #999;
+    /* background: #999; */
     padding: 1rem;
+    background-size: cover;
 }
 
 .hero-text {
@@ -64,4 +65,21 @@
         position: relative;
         bottom: -28%;
     }
+}
+
+
+/* Backgrounds */
+
+.hero-bg1 {
+    /* background-image: url(../../img/hero/hero-img1.jpg); */
+    background: red;
+}
+
+.hero-bg2 {
+    /* background: url(../../img/hero/hero-img2.jpg); */
+    background: blue;
+}
+
+.hero-bg3 {
+    background: url(../../img/hero/hero-img3.jpg);
 }

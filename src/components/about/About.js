@@ -5,7 +5,7 @@ const About = () => {
         <section className="about-container" id="about">
             <div className="about-div">
                 <h1>I'm ready to work.</h1>
-                <img src="https://via.placeholder.com/200?text=Picture+Of+Ya+Boy" />
+                <img src="https://via.placeholder.com/200?text=Picture+Of+Ya+Boy" alt='' />
             </div>
             <div className="about-div">
                 <div>
@@ -15,8 +15,8 @@ const About = () => {
                     <ul className="about-list">
                         <li>WEB DESIGN</li>
                         <li>RESPONSIVE DESIGN</li>
-                        <li>UI DESIGN</li>
-                        <li>MOBILE APPS</li>
+                        <li>REACT</li>
+                        <li>ANGULAR</li>
                     </ul>
                 </div>
             </div>

@@ -12,8 +12,8 @@ const Footer = () => {
                 <p>Created by Miles Burke</p>
             </div>
             <div className="footer-div">
-                <a href={emailAddress} rel="noopener" target="_blank"><MailIcon className="footer-icon" /></a>
-                <a href={githubPage} rel="noopener" target="_blank"><GithubIcon className="footer-icon" /></a>
+                <a href={emailAddress} rel="noopener noreferrer" target="_blank"><MailIcon className="footer-icon" /></a>
+                <a href={githubPage} rel="noopener noreferrer" target="_blank"><GithubIcon className="footer-icon" /></a>
             </div>
         </footer>
     )

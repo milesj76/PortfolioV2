@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import heroImg1 from '../../img/hero/hero-img1.png'
 import heroImg2 from '../../img/hero/hero-img2.jpg'
 import heroImg3 from '../../img/hero/hero-img3.jpg'
@@ -6,29 +6,14 @@ import Flicking from '@egjs/react-flicking'
 import {Fade, AutoPlay, Parallax} from '@egjs/flicking-plugins'
 
 const Hero = () => {
-    const backgrounds = {
-        basic: "hero-container",
-        view1: {
-            classes: "hero-bg1",
-            url: heroImg1,
-        },
-        view2: {
-            classes: "hero-bg2",
-            url: heroImg2,
-        },
-        view3: {
-            classes: "hero-bg3",
-            url: heroImg3,
-        }
-    }
 
+    // Flicking plugins to add fade and autoplay effects
     let plugins = [new Fade("", 0.8), new AutoPlay(3000, "NEXT")];
 
+    // Ease in formula for smoother scrolling of hero images
     function easeInOutQuint(x) {
         return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
         }
-
-    const [heroBackground, setHeroBackground] = useState(heroImg2)
 
     return (
 
@@ -50,7 +35,7 @@ const Hero = () => {
                 <div className="hero-box">
                     <div className="hero-text">
                         <h1>My name is Miles.</h1>
-                        <h1>I build responsive websites.</h1>
+                        <h2>Front End Developer | Musician</h2>
                     </div>
                     <div className="hero-btns-row">
                         <a href="#projects" className="hero-btn">View Portfolio</a>

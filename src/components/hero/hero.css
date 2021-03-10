@@ -1,16 +1,42 @@
 .hero-container {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 20rem;
-    /* background: #999; */
+    background: rbga(0,0,0,0);
     padding: 1rem;
     background-size: cover;
+    z-index: 3000;
+    width: 100%;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1rem;
+    color: #fff
 }
 
 .hero-text {
     margin: 1rem;
+}
+
+.hero-text h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.hero-text h1:hover {
+    cursor: default;
+}
+
+.hero-text h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .hero-container h1 {
@@ -21,6 +47,7 @@
 .hero-btns-row {
     display: flex;
     flex-direction: row;
+    padding-bottom: 1rem;
 }
 
 .hero-btn {
@@ -30,40 +57,18 @@
     padding: 0.75rem;
     margin: 0.5rem;
     font-size: 1.2em;
+    transition: 100ms;
 }
 
 .hero-btn:hover {
-    color: #333;
-    border-color: #333;
+    color: #888;
+    border-color: #888;
 }
 
-.hero-carousel {
-    margin: 0.5rem;
-    padding: 0.25rem;
-}
-
-.hero-carousel svg {
-    margin: 0 0.3rem;
-    fill: #fff;
-    opacity: 40%;
-    cursor: pointer;
-    transition-duration: 150ms;
-}
-
-.hero-carousel svg:hover, .carousel-selection {
-    opacity: 100%;
-    box-shadow: 0 0 10px #fff;
-}
 
 @media (min-width: 768px) {
     .hero-container {
         height: 34rem;
-    }
-
-    .hero-carousel {
-        display: block;
-        position: relative;
-        bottom: -28%;
     }
 }
 
@@ -82,4 +87,33 @@
 
 .hero-bg3 {
     background: url(../../img/hero/hero-img3.jpg);
+}
+
+
+/* Flicking CSS */
+
+.flicking-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.flicking-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.flicking-panel img {
+    max-width: 100%;
+}
+
+.hero-filter {
+    filter: sepia(30%);
+    filter: contrast(75%);
 }

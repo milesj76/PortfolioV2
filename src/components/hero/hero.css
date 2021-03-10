@@ -39,7 +39,7 @@
     font-size: 2.5rem;
 }
 
-.hero-text h1:hover {
+.hero-text h1:hover, h2:hover {
     cursor: default;
 }
 

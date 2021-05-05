@@ -3,7 +3,7 @@ import heroImg1 from '../../img/hero/hero-img1.png'
 import heroImg2 from '../../img/hero/hero-img2.jpg'
 import heroImg3 from '../../img/hero/hero-img3.jpg'
 import Flicking from '@egjs/react-flicking'
-import {Fade, AutoPlay, Parallax} from '@egjs/flicking-plugins'
+import {Fade, AutoPlay} from '@egjs/flicking-plugins'
 
 const Hero = () => {
 
@@ -35,7 +35,7 @@ const Hero = () => {
                 <div className="hero-box">
                     <div className="hero-text">
                         <h1>My name is Miles.</h1>
-                        <h2>Front End Developer | Musician</h2>
+                        <h2>Web Developer | Musician</h2>
                     </div>
                     <div className="hero-btns-row">
                         <a href="#projects" className="hero-btn">View Portfolio</a>

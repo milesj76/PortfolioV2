@@ -6,11 +6,11 @@
 @import './components/footer/footer.css';
 
 :root {
-  --clr-grey1: rgba(0,0,0,0.1);
-  --clr-grey2: rgba(0,0,0,0.13);
-  --clr-grey3: rgba(0,0,0,0.15);
+  --clr-grey1: rgba(0, 0, 0, 0.1);
+  --clr-grey2: rgba(0, 0, 0, 0.13);
+  --clr-grey3: rgba(0, 0, 0, 0.15);
 
-  --clr-accent1: #6A8EAE;
+  --clr-accent1: #6a8eae;
 
   --small: 479px;
   --medium: 767px;
@@ -23,7 +23,7 @@
 }
 
 .bottom {
-  border-bottom: 1px solid black
+  border-bottom: 1px solid black;
 }
 
 a {
@@ -37,7 +37,8 @@ h1 {
   margin: 1rem 0;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   font-family: inherit;
   font-size: 1em;
@@ -58,5 +59,15 @@ button {
 }
 
 button:hover {
-  background: var(--clr-accent1)
+  background: var(--clr-accent1);
+}
+
+/* Container for content on large screens */
+
+@media (min-width: 900px) {
+  .max-width {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,131 +1,136 @@
 .hero-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: rbga(0,0,0,0);
-    background-size: cover;
-    z-index: 3000;
-    width: inherit;
-    height: 25rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rbga(0, 0, 0, 0);
+  background-size: cover;
+  z-index: 3000;
+  width: inherit;
+  height: 25rem;
 }
 
 .hero-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(0,0,20,0.4);
-    padding: 0rem;
-    padding-bottom: 2rem;
-    color: #fff;
-    transition: 400ms;
-    width: inherit;
-    height: inherit;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 20, 0.4);
+  padding: 0rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  transition: 400ms;
+  width: inherit;
+  height: inherit;
+  text-align: center;
 }
 
 .hero-box:hover {
-    background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-text {
-    margin: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
-.hero-text h1:hover, h2:hover {
-    cursor: default;
+.hero-text h1:hover,
+h2:hover {
+  cursor: default;
 }
 
 .hero-text h2 {
-    font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 0.4rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 0.4rem;
 }
 
 .hero-container h1 {
-    font-weight: 200;
-    margin: 0;
+  font-weight: 200;
+  margin: 0;
 }
 
 .hero-btns-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .hero-btn {
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 0.75rem;
-    margin: 0.5rem;
-    font-size: 1.2em;
-    transition: 100ms;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  font-size: 1.2em;
+  transition: 100ms;
 }
 
 .hero-btn:hover {
-    color: var(--clr-accent1);
-    border-color: var(--clr-accent1);
+  color: var(--clr-accent1);
+  border-color: var(--clr-accent1);
 }
-
-
 
 /* Flicking CSS */
 
 .flicking-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .flicking-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25rem;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .flicking-panel img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .hero-filter {
-    filter: sepia(30%);
-    filter: contrast(75%);
+  filter: sepia(30%);
+  filter: contrast(75%);
 }
 
 /* Media Queries */
 
 @media (min-width: 768px) {
-    .hero-container {
-        height: 40rem;
-    }
+  .hero-container {
+    height: 40rem;
+  }
 
-    .hero-box {
-        background-color: rgba(0,0,20,0.25);
-        width: unset;
-        height: unset;
-        text-align: unset;
-        padding: 3rem 7rem;
-    }
+  .hero-box {
+    background-color: rgba(0, 0, 10, 0.5);
+    text-align: unset;
+    padding: 3rem 7rem;
+  }
 
-    .flicking-panel {
-        height: 40rem;
-    }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .flicking-panel {
+    height: 40rem;
+  }
 }
 
 @media (max-width: 768) {
-    .eg-flick-viewport {
-        height: 25rem;
-    }
+  .eg-flick-viewport {
+    height: 25rem;
+  }
 }

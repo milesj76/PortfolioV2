@@ -29,6 +29,10 @@
   margin: 2rem 0;
 }
 
+.about-text hr {
+  border-color: var(--clr-accent1);
+}
+
 .about-list {
   padding: 0;
 }
@@ -77,5 +81,6 @@
 
   .about-div img {
     margin: 0 5rem;
+    width: 300px;
   }
 }

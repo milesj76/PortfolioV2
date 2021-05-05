@@ -6,7 +6,6 @@ const About = () => {
         <section className="about-container" id="about">
             <div className="about-div about-center">
                 <h1>I'm ready to work.</h1>
-                {/* <img src="https://via.placeholder.com/200?text=Picture+Of+Ya+Boy" alt='' /> */}
                 <img src={me} alt="Picture of Miles, the developer"/>
             </div>
             <div className="about-div">

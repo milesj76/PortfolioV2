@@ -4,6 +4,7 @@ import surveyThumb from '../../img/survey-thumbnail.PNG'
 import counterThumb from '../../img/counter-thumbnail.PNG'
 import loginThumb from '../../img/login-thumbnail.PNG'
 import tributeThumb from '../../img/tribute-thumbnail.PNG'
+import githubFinderThumb from '../../img/githubFinder-thumbnail.JPG'
 
 const Projects = () => {
     const projects = {
@@ -31,6 +32,12 @@ const Projects = () => {
             thumb: tributeThumb,
             site: "https://codepen.io/milesj76/pen/KKzNxvw"
         },
+        githubFinder: {
+            name: "Github Finder",
+            desc: "React Web App",
+            thumb: githubFinderThumb,
+            site: "https://githubfinder76.netlify.app/"
+        }
     }
     
     return (
@@ -44,6 +51,7 @@ const Projects = () => {
                 </div>
                 <div className="projects-row2">
                     <Tile project={projects.loginPage} />
+                    <Tile project={projects.githubFinder} />
                 </div>
             </div>
         </section>

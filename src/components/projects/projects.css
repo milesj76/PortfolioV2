@@ -1,64 +1,65 @@
 .projects-container header {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .projects-div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tile {
-    display: flex;
-    align-items: flex-end;
-    padding-left: 1rem;
-    height: 15rem;
-    background: initial;
-    background-size: cover;
-    background-position: center;    
-    transition-duration: 400ms;
-    filter: opacity(100%) saturate(150%);
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+  height: 15rem;
+  background: initial;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 400ms;
+  filter: opacity(100%) saturate(150%);
 }
 
 .tile:hover {
-    filter: opacity(80%) saturate(130%) grayscale(10%) sepia(10%) contrast(120%);
+  filter: opacity(80%) saturate(130%) grayscale(10%) sepia(10%) contrast(120%);
 }
 
 .tile-text {
-    padding: 1rem;
-    transition-duration: 400ms;
+  padding: 1rem;
+  transition-duration: 400ms;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .tile-text:hover {
-    background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
-
 .tile p {
-    margin: 0;
-    font-size: 1.25em;
-    color: #fff;
+  margin: 0;
+  font-size: 1.25em;
+  color: #fff;
 }
 
 .tile small {
-    font-size: 0.7em;
-    color: #999;
+  font-size: 0.7em;
+  color: #999;
 }
 
 @media (min-width: 768px) {
-    .projects-row1, .projects-row2 {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .projects-div a {
-        width: 100%;
-    }
+  .projects-row1,
+  .projects-row2 {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .projects-row1 a:nth-child(2) {
-        width: 170%;
-    }
+  .projects-div a {
+    width: 100%;
+  }
 
-    .tile {
-        height: 20rem;
-    }
+  .projects-row1 a:nth-child(2) {
+    width: 170%;
+  }
+
+  .tile {
+    height: 20rem;
+  }
 }

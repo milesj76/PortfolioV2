@@ -6,7 +6,7 @@
 @import './components/footer/footer.css';
 
 :root {
-  --clr-grey1: rgba(0, 0, 0, 0.1);
+  --clr-grey1: rgba(0, 0, 0, 0.08);
   --clr-grey2: rgba(0, 0, 0, 0.13);
   --clr-grey3: rgba(0, 0, 0, 0.15);
 
@@ -46,7 +46,8 @@ textarea {
   padding: 1rem 0.5rem;
 }
 
-button {
+button,
+.form-submit {
   border: none;
   padding: 1rem;
   font-family: inherit;
@@ -58,7 +59,8 @@ button {
   transition-duration: 100ms;
 }
 
-button:hover {
+button:hover,
+.form-submit:hover {
   background: var(--clr-accent1);
 }
 

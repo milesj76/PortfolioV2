@@ -10,7 +10,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 0;
 }
 
 .contact-text {
@@ -65,6 +65,25 @@
   }
 
   .contact-div {
-    width: 25rem;
+    width: 28rem;
   }
+}
+
+/* Contact alerts */
+
+.contact-alert {
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.1em;
+  text-shadow: #fff 1px;
+  transition-duration: 300;
+}
+
+.contact-alert-success {
+  background: rgb(51, 240, 139);
+}
+
+.contact-alert-error {
+  background: rgba(115, 163, 202, 0.924);
 }

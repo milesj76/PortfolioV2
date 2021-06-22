@@ -45,14 +45,14 @@ const Projects = () => {
             <header><h1>My Projects</h1></header>
             <div className="projects-div">
                 <div className="projects-row1">
-                    <Tile project={projects.fccSurvey} />
-                    <Tile project={projects.reactCounter} />
+                    <Tile project={projects.githubFinder} />
+                    <Tile project={projects.loginPage} />
                     <Tile project={projects.tribute} />
                 </div>
-                <div className="projects-row2">
+                {/* <div className="projects-row2">
                     <Tile project={projects.loginPage} />
                     <Tile project={projects.githubFinder} />
-                </div>
+                </div> */}
             </div>
         </section>
     )

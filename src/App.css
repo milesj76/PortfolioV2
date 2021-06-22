@@ -6,9 +6,9 @@
 @import './components/footer/footer.css';
 
 :root {
-  --clr-grey1: rgba(0, 0, 0, 0.08);
-  --clr-grey2: rgba(0, 0, 0, 0.13);
-  --clr-grey3: rgba(0, 0, 0, 0.15);
+  --clr-grey1: rgba(0, 0, 0, 0.03);
+  --clr-grey2: rgba(0, 0, 0, 0.1);
+  --clr-grey3: rgba(0, 0, 0, 0.13);
 
   --clr-accent1: #6a8eae;
 

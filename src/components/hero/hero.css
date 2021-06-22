@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 20, 0.4);
+  background-color: rgba(0, 0, 20, 0.2);
   padding: 0rem;
   padding-bottom: 2rem;
   color: #fff;
@@ -26,9 +26,9 @@
   text-align: center;
 }
 
-.hero-box:hover {
+/* .hero-box:hover {
   background-color: rgba(0, 0, 0, 0.6);
-}
+} */
 
 .hero-text {
   margin: 0.5rem;
@@ -115,7 +115,6 @@ h2:hover {
   }
 
   .hero-box {
-    background-color: rgba(0, 0, 10, 0.5);
     text-align: unset;
     padding: 3rem 7rem;
   }

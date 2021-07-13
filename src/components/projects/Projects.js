@@ -56,7 +56,7 @@ const Projects = () => {
         <div className='projects-row1'>
           <Tile project={projects.githubFinder} />
           <Tile project={projects.loginPage} />
-          <Tile project={projects.AngularBlog} />
+          <Tile project={projects.angularBlog} />
         </div>
         {/* <div className="projects-row2">
                     <Tile project={projects.loginPage} />

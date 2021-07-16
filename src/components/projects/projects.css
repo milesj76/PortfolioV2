@@ -1,5 +1,8 @@
 .projects-container header {
-  padding: 1rem;
+  padding: 2rem;
+
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .projects-div {
@@ -15,11 +18,11 @@
   background-size: cover;
   background-position: center;
   transition-duration: 400ms;
-  filter: opacity(100%) saturate(150%);
+  filter: opacity(100%) saturate(80%) grayscale(50%);
 }
 
 .tile:hover {
-  filter: opacity(80%) saturate(130%) grayscale(10%) sepia(10%) contrast(120%);
+  filter: opacity(80%) saturate(150%) grayscale(10%) sepia(10%);
 }
 
 .tile-text {

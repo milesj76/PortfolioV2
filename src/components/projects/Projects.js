@@ -6,6 +6,7 @@ import loginThumb from '../../img/login-thumbnail.PNG'
 import tributeThumb from '../../img/tribute-thumbnail.PNG'
 import githubFinderThumb from '../../img/githubFinder-thumbnail.JPG'
 import angularBlogThumb from '../../img/angularBlog.JPG'
+import calculatorThumb from '../../img/calculator-thumb.JPG'
 
 const Projects = () => {
   const projects = {
@@ -45,6 +46,12 @@ const Projects = () => {
       thumb: angularBlogThumb,
       site: 'https://milesj76.github.io/AngularBlog',
     },
+    calculator: {
+      name: 'JS Calculator',
+      desc: 'Vanilla JS',
+      thumb: calculatorThumb,
+      site: 'https://milesj76.github.io/VanillaCalculator/',
+    },
   }
 
   return (
@@ -58,10 +65,10 @@ const Projects = () => {
           <Tile project={projects.loginPage} />
           <Tile project={projects.angularBlog} />
         </div>
-        {/* <div className="projects-row2">
-                    <Tile project={projects.loginPage} />
-                    <Tile project={projects.githubFinder} />
-                </div> */}
+        <div className='projects-row2'>
+          <Tile project={projects.calculator} />
+          <Tile project={projects.tribute} />
+        </div>
       </div>
     </section>
   )
